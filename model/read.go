@@ -1,6 +1,6 @@
 package model
 
-import "go-APIs/views"
+import "go-todo-api/views"
 
 func ReadAll() ([]views.PostRequest, error) {
 	rows, err := con.Query("SELECT * FROM TodoList")
@@ -22,7 +22,7 @@ func ReadByName(name string) ([]views.PostRequest, error) {
 	rows, err := con.Query("SELECT * FROM TodoList WHERE Name = ?", name)
 	if err != nil {
 		return nil, err
-	}
+	} 
 
 	todos := []views.PostRequest{}
 	for rows.Next() {

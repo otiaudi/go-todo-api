@@ -2,7 +2,7 @@ package controller
 import (
 	"encoding/json"
 	"net/http"
-	"go-APIs/views" // 👈 This matches your module name in go.mod
+	"go-todo-api/views" // 👈 This matches your module name in go.mod
 )
 func ping() http.HandlerFunc {  
 	return func(w http.ResponseWriter, r *http.Request) {

@@ -10,7 +10,9 @@ import (
 
 var con *sql.DB
 
-// Connect establishes a connection to the MySQL database and returns the connection object.
+// Connect establishes a connection to
+// the MySQL database and returns the
+// connection object.
 
 func Connect() *sql.DB {
 	db, err := sql.Open("mysql", "root:odero2020@tcp(localhost:3306)/GoDataBase")
@@ -25,6 +27,5 @@ func Connect() *sql.DB {
 		log.Fatal("Failed to connect to the database:", err)
 	}
 	fmt.Println("Database connection is alive.")
-	con = db
 	return db
 }
