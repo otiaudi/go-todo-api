@@ -84,7 +84,7 @@ go run main.go
     ./go-todo-api
     ```
 ### Example Request
-Open browser or API tool like Postman to test:
+Open browser or API tool like Postman to test:Juma
 → http://localhost:3002/ping
 
 ### Sample POST Request (JSON)
